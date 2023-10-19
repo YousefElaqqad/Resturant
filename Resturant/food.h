@@ -3,7 +3,7 @@ using namespace std;
 class food
 {
 private:
-	int foul, falafel, foul_sum, falafel_sum, cash,totalPrice;
+	int foul, falafel, foul_sum, falafel_sum, cash,total_price;
 	double taxic;
 public:
 	food();
@@ -13,7 +13,7 @@ public:
 	int get_falafel_price();
 	double tax();
 	int Cash();
-	int total_price();
+	int total_Price();
 	~food();
 };
 
