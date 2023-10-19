@@ -19,6 +19,6 @@ int main()
 		cout << f.Cash()<<"\n\n";
 		f.total_Price();
 		user++;
-	} while (foul!=0&&falafel!=0);
+	} while (foul!=0||falafel!=0);
 	return 0;
 }
