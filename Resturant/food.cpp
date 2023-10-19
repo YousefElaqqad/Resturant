@@ -47,6 +47,6 @@ int food::total_Price()
 food::~food()
 {
 	cout << "total foul: " << foul_sum << "\t total falafel: " << falafel_sum
-		<< "\ttotal price; " << total_price << endl;
+		<< "\ttotal price: " << total_price << endl;
 	cout << "Thank You for using our application";
 }
