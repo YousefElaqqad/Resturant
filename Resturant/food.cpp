@@ -1,7 +1,7 @@
 #include "food.h"
 #include<iostream>
 using namespace std;
-food::food() :taxic(0),cash(0),foul(0),falafel(0),foul_sum(0), falafel_sum(0),totalPrice(0)
+food::food() :taxic(0),cash(0),foul(0),falafel(0),foul_sum(0), falafel_sum(0),total_price(0)
 {
 	cout << "Press 0 to end\n";
 	cout << "there is .5 for sandwatch + 1 pound tax(delivery)\n";
@@ -39,12 +39,14 @@ double food::tax()
 		taxic = 0;
 	return taxic;
 }
-int food::total_price()
+int food::total_Price()
 {
-	totalPrice += cash;
-	return totalPrice;
+	total_price += cash;
+	return total_price;
 }
 food::~food()
 {
+	cout << "total foul: " << foul_sum << "\t total falafel: " << falafel_sum
+		<< "\ttotal price; " << total_price << endl;
 	cout << "Thank You for using our application";
 }
