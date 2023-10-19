@@ -17,9 +17,8 @@ int main()
 		cout << f.get_falafel_price()*4.5<<"\t\t";
 		cout << f.tax() << "\t";
 		cout << f.Cash()<<"\n\n";
-		f.total_price();
+		f.total_Price();
 		user++;
 	} while (foul!=0&&falafel!=0);
-	cout << "Total =" << f.total_price() << endl;
 	return 0;
 }
